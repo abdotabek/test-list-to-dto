@@ -1,0 +1,26 @@
+### save user
+POST http://localhost:8080/user/create
+Content-Type: application/json
+
+{
+  "name": "olim",
+  "phoneNumber": "998945879856"
+}
+
+### update user by id
+PUT http://localhost:8080/user/update/2
+Content-Type: application/json
+
+{
+  "name": "tursinXon",
+  "phoneNumber": "998914759545"
+}
+
+### get user by id
+GET http://localhost:8080/user/get/2
+
+### get all users
+GET http://localhost:8080/user/getAll
+
+### delete user by Id
+DELETE http://localhost:8080/user/delete/2

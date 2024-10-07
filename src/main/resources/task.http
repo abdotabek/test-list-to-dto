@@ -1,0 +1,36 @@
+### save task
+POST http://localhost:8080/task/create
+Content-Type: application/json
+
+{
+  "title": "masjid",
+  "description": "peshin",
+  "userId": 2
+}
+
+### update by task id
+PUT http://localhost:8080/task/update/3
+Content-Type: application/json
+
+{
+  "title": "ofis",
+  "description": "dedlayinlani yopish"
+}
+
+### done from task by id
+POST http://localhost:8080/task/done/3
+
+### get task by id
+GET http://localhost:8080/task/get/1
+
+### get alltask
+GET http://localhost:8080/task/getAll
+
+### delete by id
+DELETE http://localhost:8080/task/delete/2
+
+###
+GET http://localhost:8080/task/status/2
+
+
+
